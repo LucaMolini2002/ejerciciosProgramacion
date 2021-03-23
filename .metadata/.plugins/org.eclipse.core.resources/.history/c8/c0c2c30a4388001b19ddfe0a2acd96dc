@@ -1,0 +1,33 @@
+/*
+ ============================================================================
+ Name        : programa3.c
+ Author      : Luca
+ Version     :
+ Copyright   : Your copyright notice
+ Description : Hello World in C, Ansi-style
+ ============================================================================
+ */
+
+#include <stdio.h>
+#include <stdlib.h>
+
+int main(void) {
+	//pedir N numeros, sacar promedios
+
+	int numeroIngresado;
+	int acumuladorNumeros;
+	int contadorNumeros;
+	int promedio;
+
+	for(int i=0;i<5;i++){
+		printf("Ingrese un numero\n");
+	    scanf("%d",&numeroIngresado);
+		contadorNumeros++;
+		acumuladorNumeros=acumuladorNumeros+numeroIngresado;
+
+	}
+	promedio=acumuladorNumeros/contadorNumeros;
+	printf("El promedio es: %d \n",promedio);
+
+	return EXIT_SUCCESS;
+}

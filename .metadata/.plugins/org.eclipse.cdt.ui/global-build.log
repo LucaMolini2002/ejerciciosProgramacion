@@ -1,0 +1,21 @@
+21:02:50 **** Incremental Build of configuration Debug for project programa3 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\programa3.o" "..\\src\\programa3.c" 
+gcc -o programa3.exe "src\\programa3.o" 
+Info: Nothing to build for programa3
+21:03:31 **** Incremental Build of configuration Debug for project programa3 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\programa3.o" "..\\src\\programa3.c" 
+..\src\programa3.c: In function 'main':
+..\src\programa3.c:33:27: warning: format '%d' expects argument of type 'int', but argument 2 has type 'double' [-Wformat=]
+  printf("El promedio es: %d\n",promedio);
+                           ^
+gcc -o programa3.exe "src\\programa3.o" 
+21:03:54 **** Incremental Build of configuration Debug for project programa3 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\programa3.o" "..\\src\\programa3.c" 
+gcc -o programa3.exe "src\\programa3.o" 
+21:04:34 **** Incremental Build of configuration Debug for project programa3 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\programa3.o" "..\\src\\programa3.c" 
+gcc -o programa3.exe "src\\programa3.o" 
