@@ -1,21 +1,85 @@
-21:02:50 **** Incremental Build of configuration Debug for project programa3 ****
+16:55:16 **** Incremental Build of configuration Debug for project programa5 ****
 Info: Internal Builder is used for build
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\programa3.o" "..\\src\\programa3.c" 
-gcc -o programa3.exe "src\\programa3.o" 
-Info: Nothing to build for programa3
-21:03:31 **** Incremental Build of configuration Debug for project programa3 ****
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\programa5.o" "..\\src\\programa5.c" 
+..\src\programa5.c: In function 'main':
+..\src\programa5.c:19:8: warning: unused variable 'numeroC' [-Wunused-variable]
+  float numeroC;
+        ^~~~~~~
+..\src\programa5.c:18:8: warning: unused variable 'numeroB' [-Wunused-variable]
+  float numeroB;
+        ^~~~~~~
+..\src\programa5.c:17:8: warning: unused variable 'numeroA' [-Wunused-variable]
+  float numeroA;
+        ^~~~~~~
+gcc -o programa5.exe "src\\programa5.o" 
+16:55:20 **** Incremental Build of configuration Debug for project programa5 ****
 Info: Internal Builder is used for build
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\programa3.o" "..\\src\\programa3.c" 
-..\src\programa3.c: In function 'main':
-..\src\programa3.c:33:27: warning: format '%d' expects argument of type 'int', but argument 2 has type 'double' [-Wformat=]
-  printf("El promedio es: %d\n",promedio);
-                           ^
-gcc -o programa3.exe "src\\programa3.o" 
-21:03:54 **** Incremental Build of configuration Debug for project programa3 ****
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\programa5.o" "..\\src\\programa5.c" 
+..\src\programa5.c: In function 'main':
+..\src\programa5.c:19:8: warning: unused variable 'numeroC' [-Wunused-variable]
+  float numeroC=22;
+        ^~~~~~~
+..\src\programa5.c:18:8: warning: unused variable 'numeroB' [-Wunused-variable]
+  float numeroB=14;
+        ^~~~~~~
+gcc -o programa5.exe "src\\programa5.o" 
+16:56:13 **** Incremental Build of configuration Debug for project programa5 ****
 Info: Internal Builder is used for build
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\programa3.o" "..\\src\\programa3.c" 
-gcc -o programa3.exe "src\\programa3.o" 
-21:04:34 **** Incremental Build of configuration Debug for project programa3 ****
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\programa5.o" "..\\src\\programa5.c" 
+..\src\programa5.c: In function 'main':
+..\src\programa5.c:19:8: warning: unused variable 'numeroC' [-Wunused-variable]
+  float numeroC;
+        ^~~~~~~
+..\src\programa5.c:18:8: warning: unused variable 'numeroB' [-Wunused-variable]
+  float numeroB;
+        ^~~~~~~
+gcc -o programa5.exe "src\\programa5.o" 
+Info: Nothing to build for programa5
+16:56:38 **** Incremental Build of configuration Debug for project programa5 ****
 Info: Internal Builder is used for build
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\programa3.o" "..\\src\\programa3.c" 
-gcc -o programa3.exe "src\\programa3.o" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\programa5.o" "..\\src\\programa5.c" 
+..\src\programa5.c: In function 'main':
+..\src\programa5.c:19:8: warning: unused variable 'numeroC' [-Wunused-variable]
+  float numeroC;
+        ^~~~~~~
+..\src\programa5.c:18:8: warning: unused variable 'numeroB' [-Wunused-variable]
+  float numeroB;
+        ^~~~~~~
+gcc -o programa5.exe "src\\programa5.o" 
+Info: Nothing to build for programa5
+17:03:35 **** Incremental Build of configuration Debug for project programa5 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\programa5.o" "..\\src\\programa5.c" 
+..\src\programa5.c: In function 'main':
+..\src\programa5.c:22:28: warning: format '%d' expects argument of type 'int', but argument 2 has type 'float *' [-Wformat=]
+  printf("el size de A es: %d\n",&numeroA);
+                            ^
+..\src\programa5.c:20:7: warning: unused variable 'o' [-Wunused-variable]
+  char o;
+       ^
+..\src\programa5.c:19:8: warning: unused variable 'numeroC' [-Wunused-variable]
+  float numeroC;
+        ^~~~~~~
+..\src\programa5.c:18:8: warning: unused variable 'numeroB' [-Wunused-variable]
+  float numeroB;
+        ^~~~~~~
+gcc -o programa5.exe "src\\programa5.o" 
+Info: Nothing to build for programa5
+17:05:17 **** Incremental Build of configuration Debug for project programa5 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\programa5.o" "..\\src\\programa5.c" 
+..\src\programa5.c: In function 'main':
+..\src\programa5.c:22:28: warning: format '%d' expects argument of type 'int', but argument 2 has type 'float *' [-Wformat=]
+  printf("el size de A es: %d\n",&numeroA);
+                            ^
+..\src\programa5.c:23:28: warning: format '%d' expects argument of type 'int', but argument 2 has type 'float *' [-Wformat=]
+  printf("el size de A es: %d\n",&numeroB);
+                            ^
+..\src\programa5.c:20:7: warning: unused variable 'o' [-Wunused-variable]
+  char o;
+       ^
+..\src\programa5.c:19:8: warning: unused variable 'numeroC' [-Wunused-variable]
+  float numeroC;
+        ^~~~~~~
+gcc -o programa5.exe "src\\programa5.o" 
+Info: Nothing to build for programa5

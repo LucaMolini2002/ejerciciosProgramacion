@@ -1,12 +1,15 @@
 LaunchTargetManager/configs/Programa2.exe=org.eclipse.launchbar.core.launchTargetType.local\:Local
+LaunchTargetManager/configs/Programa4.exe=org.eclipse.launchbar.core.launchTargetType.local\:Local
 LaunchTargetManager/configs/hola\ mundo.exe=org.eclipse.launchbar.core.launchTargetType.local\:Local
 LaunchTargetManager/configs/programa1\ Debug=org.eclipse.launchbar.core.launchTargetType.local\:Local
 LaunchTargetManager/configs/programa1.exe=org.eclipse.launchbar.core.launchTargetType.local\:Local
 LaunchTargetManager/configs/programa3.exe=org.eclipse.launchbar.core.launchTargetType.local\:Local
+LaunchTargetManager/configs/programa5.exe=org.eclipse.launchbar.core.launchTargetType.local\:Local
+LaunchTargetManager/configs/programa6.exe=org.eclipse.launchbar.core.launchTargetType.local\:Local
 LaunchTargetManager/org.eclipse.launchbar.core.launchTargetType.local,Local/arch=x86_64
 LaunchTargetManager/org.eclipse.launchbar.core.launchTargetType.local,Local/name=Local
 LaunchTargetManager/org.eclipse.launchbar.core.launchTargetType.local,Local/os=win32
-configDescList=org.eclipse.launchbar.core.descriptorType.default\:hola mundo.exe,org.eclipse.launchbar.core.descriptorType.default\:programa1 Debug,org.eclipse.launchbar.core.descriptorType.default\:Programa2.exe,org.eclipse.launchbar.core.descriptorType.default\:programa1.exe,org.eclipse.launchbar.core.descriptorType.default\:programa3.exe
+configDescList=org.eclipse.launchbar.core.descriptorType.default\:hola mundo.exe,org.eclipse.launchbar.core.descriptorType.default\:programa1 Debug,org.eclipse.launchbar.core.descriptorType.default\:Programa2.exe,org.eclipse.launchbar.core.descriptorType.default\:programa1.exe,org.eclipse.launchbar.core.descriptorType.default\:programa3.exe,org.eclipse.launchbar.core.descriptorType.default\:Programa4.exe,org.eclipse.launchbar.core.descriptorType.default\:programa6.exe,org.eclipse.launchbar.core.descriptorType.default\:programa5.exe
 eclipse.preferences.version=1
 org.eclipse.launchbar.core.descriptorType.default\:Programa2.exe/activeLaunchMode=run
 org.eclipse.launchbar.core.descriptorType.default\:hola\ mundo.exe/activeLaunchMode=run
