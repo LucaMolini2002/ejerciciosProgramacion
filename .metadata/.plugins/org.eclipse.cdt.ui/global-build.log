@@ -1,85 +1,45 @@
-16:55:16 **** Incremental Build of configuration Debug for project programa5 ****
+22:04:49 **** Incremental Build of configuration Debug for project programa9 ****
 Info: Internal Builder is used for build
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\programa5.o" "..\\src\\programa5.c" 
-..\src\programa5.c: In function 'main':
-..\src\programa5.c:19:8: warning: unused variable 'numeroC' [-Wunused-variable]
-  float numeroC;
-        ^~~~~~~
-..\src\programa5.c:18:8: warning: unused variable 'numeroB' [-Wunused-variable]
-  float numeroB;
-        ^~~~~~~
-..\src\programa5.c:17:8: warning: unused variable 'numeroA' [-Wunused-variable]
-  float numeroA;
-        ^~~~~~~
-gcc -o programa5.exe "src\\programa5.o" 
-16:55:20 **** Incremental Build of configuration Debug for project programa5 ****
-Info: Internal Builder is used for build
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\programa5.o" "..\\src\\programa5.c" 
-..\src\programa5.c: In function 'main':
-..\src\programa5.c:19:8: warning: unused variable 'numeroC' [-Wunused-variable]
-  float numeroC=22;
-        ^~~~~~~
-..\src\programa5.c:18:8: warning: unused variable 'numeroB' [-Wunused-variable]
-  float numeroB=14;
-        ^~~~~~~
-gcc -o programa5.exe "src\\programa5.o" 
-16:56:13 **** Incremental Build of configuration Debug for project programa5 ****
-Info: Internal Builder is used for build
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\programa5.o" "..\\src\\programa5.c" 
-..\src\programa5.c: In function 'main':
-..\src\programa5.c:19:8: warning: unused variable 'numeroC' [-Wunused-variable]
-  float numeroC;
-        ^~~~~~~
-..\src\programa5.c:18:8: warning: unused variable 'numeroB' [-Wunused-variable]
-  float numeroB;
-        ^~~~~~~
-gcc -o programa5.exe "src\\programa5.o" 
-Info: Nothing to build for programa5
-16:56:38 **** Incremental Build of configuration Debug for project programa5 ****
-Info: Internal Builder is used for build
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\programa5.o" "..\\src\\programa5.c" 
-..\src\programa5.c: In function 'main':
-..\src\programa5.c:19:8: warning: unused variable 'numeroC' [-Wunused-variable]
-  float numeroC;
-        ^~~~~~~
-..\src\programa5.c:18:8: warning: unused variable 'numeroB' [-Wunused-variable]
-  float numeroB;
-        ^~~~~~~
-gcc -o programa5.exe "src\\programa5.o" 
-Info: Nothing to build for programa5
-17:03:35 **** Incremental Build of configuration Debug for project programa5 ****
-Info: Internal Builder is used for build
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\programa5.o" "..\\src\\programa5.c" 
-..\src\programa5.c: In function 'main':
-..\src\programa5.c:22:28: warning: format '%d' expects argument of type 'int', but argument 2 has type 'float *' [-Wformat=]
-  printf("el size de A es: %d\n",&numeroA);
-                            ^
-..\src\programa5.c:20:7: warning: unused variable 'o' [-Wunused-variable]
-  char o;
-       ^
-..\src\programa5.c:19:8: warning: unused variable 'numeroC' [-Wunused-variable]
-  float numeroC;
-        ^~~~~~~
-..\src\programa5.c:18:8: warning: unused variable 'numeroB' [-Wunused-variable]
-  float numeroB;
-        ^~~~~~~
-gcc -o programa5.exe "src\\programa5.o" 
-Info: Nothing to build for programa5
-17:05:17 **** Incremental Build of configuration Debug for project programa5 ****
-Info: Internal Builder is used for build
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\programa5.o" "..\\src\\programa5.c" 
-..\src\programa5.c: In function 'main':
-..\src\programa5.c:22:28: warning: format '%d' expects argument of type 'int', but argument 2 has type 'float *' [-Wformat=]
-  printf("el size de A es: %d\n",&numeroA);
-                            ^
-..\src\programa5.c:23:28: warning: format '%d' expects argument of type 'int', but argument 2 has type 'float *' [-Wformat=]
-  printf("el size de A es: %d\n",&numeroB);
-                            ^
-..\src\programa5.c:20:7: warning: unused variable 'o' [-Wunused-variable]
-  char o;
-       ^
-..\src\programa5.c:19:8: warning: unused variable 'numeroC' [-Wunused-variable]
-  float numeroC;
-        ^~~~~~~
-gcc -o programa5.exe "src\\programa5.o" 
-Info: Nothing to build for programa5
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\arr.o" "..\\src\\arr.c" 
+..\src\arr.c: In function 'arr_calcularPromedioInt':
+..\src\arr.c:13:8: error: 'resultado' redeclared as different kind of symbol
+  float resultado;
+        ^~~~~~~~~
+..\src\arr.c:10:59: note: previous definition of 'resultado' was here
+ int arr_calcularPromedioInt(int* array,int limite, float* resultado)
+                                                           ^~~~~~~~~
+..\src\arr.c:13:8: warning: variable 'resultado' set but not used [-Wunused-but-set-variable]
+  float resultado;
+        ^~~~~~~~~
+..\src\arr.c: At top level:
+..\src\arr.c:22:5: error: conflicting types for 'arr_calcularPromedioInt'
+ int arr_calcularPromedioInt(int* array,int limite, int* resultado)
+     ^~~~~~~~~~~~~~~~~~~~~~~
+..\src\arr.c:10:5: note: previous definition of 'arr_calcularPromedioInt' was here
+ int arr_calcularPromedioInt(int* array,int limite, float* resultado)
+     ^~~~~~~~~~~~~~~~~~~~~~~
+..\src\arr.c: In function 'arr_calcularPromedioInt':
+..\src\arr.c:24:6: error: 'resultado' redeclared as different kind of symbol
+  int resultado;
+      ^~~~~~~~~
+..\src\arr.c:22:57: note: previous definition of 'resultado' was here
+ int arr_calcularPromedioInt(int* array,int limite, int* resultado)
+                                                         ^~~~~~~~~
+..\src\arr.c:25:6: error: 'limite' redeclared as different kind of symbol
+  int limite;
+      ^~~~~~
+..\src\arr.c:22:44: note: previous definition of 'limite' was here
+ int arr_calcularPromedioInt(int* array,int limite, int* resultado)
+                                            ^~~~~~
+..\src\arr.c:28:8: warning: comparison between pointer and integer
+   array<limite;
+        ^
+..\src\arr.c:28:8: warning: statement with no effect [-Wunused-value]
+   array<limite;
+   ~~~~~^~~~~~~
+..\src\arr.c:24:6: warning: unused variable 'resultado' [-Wunused-variable]
+  int resultado;
+      ^~~~~~~~~
+..\src\arr.c:30:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
