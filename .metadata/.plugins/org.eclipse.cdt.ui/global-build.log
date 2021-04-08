@@ -1,45 +1,488 @@
-22:04:49 **** Incremental Build of configuration Debug for project programa9 ****
+18:01:05 **** Incremental Build of configuration Debug for project programa10 ****
 Info: Internal Builder is used for build
 gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\arr.o" "..\\src\\arr.c" 
-..\src\arr.c: In function 'arr_calcularPromedioInt':
-..\src\arr.c:13:8: error: 'resultado' redeclared as different kind of symbol
-  float resultado;
-        ^~~~~~~~~
-..\src\arr.c:10:59: note: previous definition of 'resultado' was here
- int arr_calcularPromedioInt(int* array,int limite, float* resultado)
-                                                           ^~~~~~~~~
-..\src\arr.c:13:8: warning: variable 'resultado' set but not used [-Wunused-but-set-variable]
-  float resultado;
-        ^~~~~~~~~
-..\src\arr.c: At top level:
-..\src\arr.c:22:5: error: conflicting types for 'arr_calcularPromedioInt'
- int arr_calcularPromedioInt(int* array,int limite, int* resultado)
-     ^~~~~~~~~~~~~~~~~~~~~~~
-..\src\arr.c:10:5: note: previous definition of 'arr_calcularPromedioInt' was here
- int arr_calcularPromedioInt(int* array,int limite, float* resultado)
-     ^~~~~~~~~~~~~~~~~~~~~~~
-..\src\arr.c: In function 'arr_calcularPromedioInt':
-..\src\arr.c:24:6: error: 'resultado' redeclared as different kind of symbol
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\programa10.o" "..\\src\\programa10.c" 
+..\src\programa10.c: In function 'main':
+..\src\programa10.c:27:17: warning: passing argument 1 of 'utn_getInt' makes pointer from integer without a cast [-Wint-conversion]
+   if(utn_getInt(edades[i],"Ingrese edad:","Error\n",0,120,5)==0)
+                 ^~~~~~
+In file included from ..\src\programa10.c:13:0:
+..\src\utn.h:11:5: note: expected 'int *' but argument is of type 'int'
+ int utn_getInt(int* pResultado,char* mensaje,char* mensajeError,
+     ^~~~~~~~~~
+..\src\programa10.c:34:45: warning: passing argument 3 of 'arr_calcularMinimoInt' from incompatible pointer type [-Wincompatible-pointer-types]
+   if(arr_calcularMinimoInt(&edad,EDADESSIZE,&resultado)==0)
+                                             ^
+In file included from ..\src\programa10.c:14:0:
+..\src\arr.h:11:5: note: expected 'int *' but argument is of type 'float *'
+ int arr_calcularMinimoInt(int* array,int limite, int* resultado);
+     ^~~~~~~~~~~~~~~~~~~~~
+..\src\programa10.c:36:30: warning: format '%d' expects argument of type 'int', but argument 3 has type 'double' [-Wformat=]
+    printf("indice: %d valor %d\n",i+1,resultado);
+                              ^
+..\src\programa10.c:22:6: warning: unused variable 'acumuladorEdades' [-Wunused-variable]
+  int acumuladorEdades=0;
+      ^~~~~~~~~~~~~~~~
+gcc -o programa10.exe "src\\arr.o" "src\\programa10.o" "src\\utn.o" 
+Info: Nothing to build for programa10
+Info: Nothing to build for programa10
+18:07:51 **** Incremental Build of configuration Debug for project programa10 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\utn.o" "..\\src\\utn.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\programa10.o" "..\\src\\programa10.c" 
+..\src\programa10.c: In function 'main':
+..\src\programa10.c:34:45: warning: passing argument 3 of 'arr_calcularMinimoInt' from incompatible pointer type [-Wincompatible-pointer-types]
+   if(arr_calcularMinimoInt(&edad,EDADESSIZE,&resultado)==0)
+                                             ^
+In file included from ..\src\programa10.c:14:0:
+..\src\arr.h:11:5: note: expected 'int *' but argument is of type 'float *'
+ int arr_calcularMinimoInt(int* array,int limite, int* resultado);
+     ^~~~~~~~~~~~~~~~~~~~~
+..\src\programa10.c:36:30: warning: format '%d' expects argument of type 'int', but argument 3 has type 'double' [-Wformat=]
+    printf("indice: %d valor %d\n",i+1,resultado);
+                              ^
+..\src\programa10.c:22:6: warning: unused variable 'acumuladorEdades' [-Wunused-variable]
+  int acumuladorEdades=0;
+      ^~~~~~~~~~~~~~~~
+gcc -o programa10.exe "src\\arr.o" "src\\programa10.o" "src\\utn.o" 
+Info: Nothing to build for programa10
+18:12:14 **** Incremental Build of configuration Debug for project programa10 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\programa10.o" "..\\src\\programa10.c" 
+..\src\programa10.c: In function 'main':
+..\src\programa10.c:34:50: warning: passing argument 3 of 'arr_calcularMinimoInt' from incompatible pointer type [-Wincompatible-pointer-types]
+   if(arr_calcularMinimoInt(&edades[i],EDADESSIZE,&resultado)==0)
+                                                  ^
+In file included from ..\src\programa10.c:14:0:
+..\src\arr.h:11:5: note: expected 'int *' but argument is of type 'float *'
+ int arr_calcularMinimoInt(int* array,int limite, int* resultado);
+     ^~~~~~~~~~~~~~~~~~~~~
+..\src\programa10.c:36:30: warning: format '%d' expects argument of type 'int', but argument 3 has type 'double' [-Wformat=]
+    printf("indice: %d valor %d\n",i+1,resultado);
+                              ^
+..\src\programa10.c:22:6: warning: unused variable 'acumuladorEdades' [-Wunused-variable]
+  int acumuladorEdades=0;
+      ^~~~~~~~~~~~~~~~
+..\src\programa10.c:20:6: warning: variable 'edad' set but not used [-Wunused-but-set-variable]
+  int edad;
+      ^~~~
+gcc -o programa10.exe "src\\arr.o" "src\\programa10.o" "src\\utn.o" 
+Info: Nothing to build for programa10
+18:13:04 **** Incremental Build of configuration Debug for project programa10 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\programa10.o" "..\\src\\programa10.c" 
+..\src\programa10.c: In function 'main':
+..\src\programa10.c:34:50: warning: passing argument 3 of 'arr_calcularMinimoInt' from incompatible pointer type [-Wincompatible-pointer-types]
+   if(arr_calcularMinimoInt(&edades[i],EDADESSIZE,&resultado)==0)
+                                                  ^
+In file included from ..\src\programa10.c:14:0:
+..\src\arr.h:11:5: note: expected 'int *' but argument is of type 'float *'
+ int arr_calcularMinimoInt(int* array,int limite, int* resultado);
+     ^~~~~~~~~~~~~~~~~~~~~
+..\src\programa10.c:36:30: warning: format '%d' expects argument of type 'int', but argument 3 has type 'double' [-Wformat=]
+    printf("indice: %d valor %d\n",i,resultado);
+                              ^
+..\src\programa10.c:22:6: warning: unused variable 'acumuladorEdades' [-Wunused-variable]
+  int acumuladorEdades=0;
+      ^~~~~~~~~~~~~~~~
+..\src\programa10.c:20:6: warning: variable 'edad' set but not used [-Wunused-but-set-variable]
+  int edad;
+      ^~~~
+gcc -o programa10.exe "src\\arr.o" "src\\programa10.o" "src\\utn.o" 
+18:22:48 **** Incremental Build of configuration Debug for project programa10 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\programa10.o" "..\\src\\programa10.c" 
+..\src\programa10.c: In function 'main':
+..\src\programa10.c:34:35: error: 'i' undeclared (first use in this function)
+  if(arr_calcularMinimoInt(&edades[i],EDADESSIZE,&resultado)==0)
+                                   ^
+..\src\programa10.c:34:35: note: each undeclared identifier is reported only once for each function it appears in
+..\src\programa10.c:34:49: warning: passing argument 3 of 'arr_calcularMinimoInt' from incompatible pointer type [-Wincompatible-pointer-types]
+  if(arr_calcularMinimoInt(&edades[i],EDADESSIZE,&resultado)==0)
+                                                 ^
+In file included from ..\src\programa10.c:14:0:
+..\src\arr.h:11:5: note: expected 'int *' but argument is of type 'float *'
+ int arr_calcularMinimoInt(int* array,int limite, int* resultado);
+     ^~~~~~~~~~~~~~~~~~~~~
+..\src\programa10.c:22:6: warning: unused variable 'acumuladorEdades' [-Wunused-variable]
+  int acumuladorEdades=0;
+      ^~~~~~~~~~~~~~~~
+..\src\programa10.c:20:6: warning: variable 'edad' set but not used [-Wunused-but-set-variable]
+  int edad;
+      ^~~~
+18:23:31 **** Incremental Build of configuration Debug for project programa10 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\programa10.o" "..\\src\\programa10.c" 
+..\src\programa10.c: In function 'main':
+..\src\programa10.c:34:27: warning: passing argument 1 of 'arr_calcularMinimoInt' from incompatible pointer type [-Wincompatible-pointer-types]
+  if(arr_calcularMinimoInt(&edades,EDADESSIZE,&resultado)==0)
+                           ^
+In file included from ..\src\programa10.c:14:0:
+..\src\arr.h:11:5: note: expected 'int *' but argument is of type 'int (*)[5]'
+ int arr_calcularMinimoInt(int* array,int limite, int* resultado);
+     ^~~~~~~~~~~~~~~~~~~~~
+..\src\programa10.c:34:46: warning: passing argument 3 of 'arr_calcularMinimoInt' from incompatible pointer type [-Wincompatible-pointer-types]
+  if(arr_calcularMinimoInt(&edades,EDADESSIZE,&resultado)==0)
+                                              ^
+In file included from ..\src\programa10.c:14:0:
+..\src\arr.h:11:5: note: expected 'int *' but argument is of type 'float *'
+ int arr_calcularMinimoInt(int* array,int limite, int* resultado);
+     ^~~~~~~~~~~~~~~~~~~~~
+..\src\programa10.c:36:35: error: 'i' undeclared (first use in this function)
+    printf("indice: %d valor %d\n",i,resultado);
+                                   ^
+..\src\programa10.c:36:35: note: each undeclared identifier is reported only once for each function it appears in
+..\src\programa10.c:22:6: warning: unused variable 'acumuladorEdades' [-Wunused-variable]
+  int acumuladorEdades=0;
+      ^~~~~~~~~~~~~~~~
+..\src\programa10.c:20:6: warning: variable 'edad' set but not used [-Wunused-but-set-variable]
+  int edad;
+      ^~~~
+18:24:18 **** Incremental Build of configuration Debug for project programa10 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\arr.o" "..\\src\\arr.c" 
+..\src\arr.c: In function 'arr_calcularMinimoInt':
+..\src\arr.c:14:6: warning: variable 'auxiliar' set but not used [-Wunused-but-set-variable]
+  int auxiliar;
+      ^~~~~~~~
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\programa10.o" "..\\src\\programa10.c" 
+..\src\programa10.c: In function 'main':
+..\src\programa10.c:34:27: warning: passing argument 1 of 'arr_calcularMinimoInt' from incompatible pointer type [-Wincompatible-pointer-types]
+  if(arr_calcularMinimoInt(&edades,EDADESSIZE,&resultado)==0)
+                           ^
+In file included from ..\src\programa10.c:14:0:
+..\src\arr.h:11:5: note: expected 'int *' but argument is of type 'int (*)[5]'
+ int arr_calcularMinimoInt(int* array,int limite, int* resultado);
+     ^~~~~~~~~~~~~~~~~~~~~
+..\src\programa10.c:34:46: warning: passing argument 3 of 'arr_calcularMinimoInt' from incompatible pointer type [-Wincompatible-pointer-types]
+  if(arr_calcularMinimoInt(&edades,EDADESSIZE,&resultado)==0)
+                                              ^
+In file included from ..\src\programa10.c:14:0:
+..\src\arr.h:11:5: note: expected 'int *' but argument is of type 'float *'
+ int arr_calcularMinimoInt(int* array,int limite, int* resultado);
+     ^~~~~~~~~~~~~~~~~~~~~
+..\src\programa10.c:36:27: warning: format '%d' expects argument of type 'int', but argument 2 has type 'double' [-Wformat=]
+    printf("indice: valor %d\n",resultado);
+                           ^
+..\src\programa10.c:22:6: warning: unused variable 'acumuladorEdades' [-Wunused-variable]
+  int acumuladorEdades=0;
+      ^~~~~~~~~~~~~~~~
+..\src\programa10.c:20:6: warning: variable 'edad' set but not used [-Wunused-but-set-variable]
+  int edad;
+      ^~~~
+gcc -o programa10.exe "src\\arr.o" "src\\programa10.o" "src\\utn.o" 
+Info: Nothing to build for programa10
+18:33:47 **** Incremental Build of configuration Debug for project programa10 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\arr.o" "..\\src\\arr.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\programa10.o" "..\\src\\programa10.c" 
+..\src\programa10.c: In function 'main':
+..\src\programa10.c:38:27: warning: passing argument 1 of 'arr_calcularMinimoInt' from incompatible pointer type [-Wincompatible-pointer-types]
+  if(arr_calcularMinimoInt(&edades,EDADESSIZE,&resultado)==0)
+                           ^
+In file included from ..\src\programa10.c:14:0:
+..\src\arr.h:11:5: note: expected 'int *' but argument is of type 'int (*)[5]'
+ int arr_calcularMinimoInt(int* array,int limite, int* resultado);
+     ^~~~~~~~~~~~~~~~~~~~~
+..\src\programa10.c:38:46: warning: passing argument 3 of 'arr_calcularMinimoInt' from incompatible pointer type [-Wincompatible-pointer-types]
+  if(arr_calcularMinimoInt(&edades,EDADESSIZE,&resultado)==0)
+                                              ^
+In file included from ..\src\programa10.c:14:0:
+..\src\arr.h:11:5: note: expected 'int *' but argument is of type 'float *'
+ int arr_calcularMinimoInt(int* array,int limite, int* resultado);
+     ^~~~~~~~~~~~~~~~~~~~~
+..\src\programa10.c:40:18: warning: format '%d' expects argument of type 'int', but argument 2 has type 'double' [-Wformat=]
+   printf("valor %d\n",resultado);
+                  ^
+..\src\programa10.c:22:6: warning: unused variable 'acumuladorEdades' [-Wunused-variable]
+  int acumuladorEdades=0;
+      ^~~~~~~~~~~~~~~~
+gcc -o programa10.exe "src\\arr.o" "src\\programa10.o" "src\\utn.o" 
+Info: Nothing to build for programa10
+18:34:31 **** Incremental Build of configuration Debug for project programa10 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\programa10.o" "..\\src\\programa10.c" 
+..\src\programa10.c: In function 'main':
+..\src\programa10.c:33:27: warning: passing argument 1 of 'arr_calcularMinimoInt' from incompatible pointer type [-Wincompatible-pointer-types]
+  if(arr_calcularMinimoInt(&edades,EDADESSIZE,&resultado)==0)
+                           ^
+In file included from ..\src\programa10.c:14:0:
+..\src\arr.h:11:5: note: expected 'int *' but argument is of type 'int (*)[5]'
+ int arr_calcularMinimoInt(int* array,int limite, int* resultado);
+     ^~~~~~~~~~~~~~~~~~~~~
+..\src\programa10.c:33:46: warning: passing argument 3 of 'arr_calcularMinimoInt' from incompatible pointer type [-Wincompatible-pointer-types]
+  if(arr_calcularMinimoInt(&edades,EDADESSIZE,&resultado)==0)
+                                              ^
+In file included from ..\src\programa10.c:14:0:
+..\src\arr.h:11:5: note: expected 'int *' but argument is of type 'float *'
+ int arr_calcularMinimoInt(int* array,int limite, int* resultado);
+     ^~~~~~~~~~~~~~~~~~~~~
+..\src\programa10.c:35:18: warning: format '%d' expects argument of type 'int', but argument 2 has type 'double' [-Wformat=]
+   printf("valor %d\n",resultado);
+                  ^
+..\src\programa10.c:22:6: warning: unused variable 'acumuladorEdades' [-Wunused-variable]
+  int acumuladorEdades=0;
+      ^~~~~~~~~~~~~~~~
+gcc -o programa10.exe "src\\arr.o" "src\\programa10.o" "src\\utn.o" 
+18:36:48 **** Incremental Build of configuration Debug for project programa10 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\programa10.o" "..\\src\\programa10.c" 
+..\src\programa10.c: In function 'main':
+..\src\programa10.c:38:27: warning: passing argument 1 of 'arr_calcularMinimoInt' from incompatible pointer type [-Wincompatible-pointer-types]
+  if(arr_calcularMinimoInt(&edades,EDADESSIZE,&resultado)==0)
+                           ^
+In file included from ..\src\programa10.c:14:0:
+..\src\arr.h:11:5: note: expected 'int *' but argument is of type 'int (*)[5]'
+ int arr_calcularMinimoInt(int* array,int limite, int* resultado);
+     ^~~~~~~~~~~~~~~~~~~~~
+..\src\programa10.c:38:46: warning: passing argument 3 of 'arr_calcularMinimoInt' from incompatible pointer type [-Wincompatible-pointer-types]
+  if(arr_calcularMinimoInt(&edades,EDADESSIZE,&resultado)==0)
+                                              ^
+In file included from ..\src\programa10.c:14:0:
+..\src\arr.h:11:5: note: expected 'int *' but argument is of type 'float *'
+ int arr_calcularMinimoInt(int* array,int limite, int* resultado);
+     ^~~~~~~~~~~~~~~~~~~~~
+..\src\programa10.c:40:18: warning: format '%d' expects argument of type 'int', but argument 2 has type 'double' [-Wformat=]
+   printf("valor %d\n",resultado);
+                  ^
+..\src\programa10.c:22:6: warning: unused variable 'acumuladorEdades' [-Wunused-variable]
+  int acumuladorEdades=0;
+      ^~~~~~~~~~~~~~~~
+gcc -o programa10.exe "src\\arr.o" "src\\programa10.o" "src\\utn.o" 
+18:38:28 **** Incremental Build of configuration Debug for project programa10 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\programa10.o" "..\\src\\programa10.c" 
+..\src\programa10.c: In function 'main':
+..\src\programa10.c:38:27: warning: passing argument 1 of 'arr_calcularMinimoInt' from incompatible pointer type [-Wincompatible-pointer-types]
+  if(arr_calcularMinimoInt(&edades,EDADESSIZE,&resultado)==0)
+                           ^
+In file included from ..\src\programa10.c:14:0:
+..\src\arr.h:11:5: note: expected 'int *' but argument is of type 'int (*)[5]'
+ int arr_calcularMinimoInt(int* array,int limite, int* resultado);
+     ^~~~~~~~~~~~~~~~~~~~~
+..\src\programa10.c:38:46: warning: passing argument 3 of 'arr_calcularMinimoInt' from incompatible pointer type [-Wincompatible-pointer-types]
+  if(arr_calcularMinimoInt(&edades,EDADESSIZE,&resultado)==0)
+                                              ^
+In file included from ..\src\programa10.c:14:0:
+..\src\arr.h:11:5: note: expected 'int *' but argument is of type 'float *'
+ int arr_calcularMinimoInt(int* array,int limite, int* resultado);
+     ^~~~~~~~~~~~~~~~~~~~~
+..\src\programa10.c:40:18: warning: format '%d' expects argument of type 'int', but argument 2 has type 'double' [-Wformat=]
+   printf("valor %d\n",resultado);
+                  ^
+..\src\programa10.c:22:6: warning: unused variable 'acumuladorEdades' [-Wunused-variable]
+  int acumuladorEdades=0;
+      ^~~~~~~~~~~~~~~~
+gcc -o programa10.exe "src\\arr.o" "src\\programa10.o" "src\\utn.o" 
+18:44:24 **** Incremental Build of configuration Debug for project programa10 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\programa10.o" "..\\src\\programa10.c" 
+..\src\programa10.c: In function 'main':
+..\src\programa10.c:42:17: warning: passing argument 1 of 'arr_Ordenar' from incompatible pointer type [-Wincompatible-pointer-types]
+  if(arr_Ordenar(&edades,EDADESSIZE)==0)
+                 ^
+In file included from ..\src\programa10.c:14:0:
+..\src\arr.h:13:5: note: expected 'int *' but argument is of type 'int (*)[5]'
+ int arr_Ordenar(int* array,int limite);
+     ^~~~~~~~~~~
+..\src\programa10.c:45:31: warning: format '%d' expects argument of type 'int', but argument 3 has type 'double' [-Wformat=]
+    printf("indice: %d valor: %d\n", i, resultado);
+                               ^
+..\src\programa10.c:22:6: warning: unused variable 'acumuladorEdades' [-Wunused-variable]
+  int acumuladorEdades=0;
+      ^~~~~~~~~~~~~~~~
+..\src\programa10.c:45:4: warning: 'resultado' may be used uninitialized in this function [-Wmaybe-uninitialized]
+    printf("indice: %d valor: %d\n", i, resultado);
+    ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+gcc -o programa10.exe "src\\arr.o" "src\\programa10.o" "src\\utn.o" 
+18:44:49 **** Incremental Build of configuration Debug for project programa10 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\programa10.o" "..\\src\\programa10.c" 
+..\src\programa10.c: In function 'main':
+..\src\programa10.c:42:17: warning: passing argument 1 of 'arr_Ordenar' from incompatible pointer type [-Wincompatible-pointer-types]
+  if(arr_Ordenar(&edades,EDADESSIZE)==0)
+                 ^
+In file included from ..\src\programa10.c:14:0:
+..\src\arr.h:13:5: note: expected 'int *' but argument is of type 'int (*)[5]'
+ int arr_Ordenar(int* array,int limite);
+     ^~~~~~~~~~~
+..\src\programa10.c:22:6: warning: unused variable 'acumuladorEdades' [-Wunused-variable]
+  int acumuladorEdades=0;
+      ^~~~~~~~~~~~~~~~
+..\src\programa10.c:45:4: warning: 'resultado' may be used uninitialized in this function [-Wmaybe-uninitialized]
+    printf("indice: %d valor: %d\n", i, resultado);
+    ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+gcc -o programa10.exe "src\\arr.o" "src\\programa10.o" "src\\utn.o" 
+18:46:32 **** Incremental Build of configuration Debug for project programa10 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\programa10.o" "..\\src\\programa10.c" 
+..\src\programa10.c: In function 'main':
+..\src\programa10.c:42:17: warning: passing argument 1 of 'arr_Ordenar' from incompatible pointer type [-Wincompatible-pointer-types]
+  if(arr_Ordenar(&edades,EDADESSIZE)==0)
+                 ^
+In file included from ..\src\programa10.c:14:0:
+..\src\arr.h:13:5: note: expected 'int *' but argument is of type 'int (*)[5]'
+ int arr_Ordenar(int* array,int limite);
+     ^~~~~~~~~~~
+..\src\programa10.c:23:6: warning: unused variable 'resultado' [-Wunused-variable]
   int resultado;
       ^~~~~~~~~
-..\src\arr.c:22:57: note: previous definition of 'resultado' was here
- int arr_calcularPromedioInt(int* array,int limite, int* resultado)
-                                                         ^~~~~~~~~
-..\src\arr.c:25:6: error: 'limite' redeclared as different kind of symbol
-  int limite;
-      ^~~~~~
-..\src\arr.c:22:44: note: previous definition of 'limite' was here
- int arr_calcularPromedioInt(int* array,int limite, int* resultado)
-                                            ^~~~~~
-..\src\arr.c:28:8: warning: comparison between pointer and integer
-   array<limite;
-        ^
-..\src\arr.c:28:8: warning: statement with no effect [-Wunused-value]
-   array<limite;
-   ~~~~~^~~~~~~
-..\src\arr.c:24:6: warning: unused variable 'resultado' [-Wunused-variable]
-  int resultado;
-      ^~~~~~~~~
-..\src\arr.c:30:1: warning: control reaches end of non-void function [-Wreturn-type]
- }
- ^
+..\src\programa10.c:22:6: warning: unused variable 'acumuladorEdades' [-Wunused-variable]
+  int acumuladorEdades=0;
+      ^~~~~~~~~~~~~~~~
+gcc -o programa10.exe "src\\arr.o" "src\\programa10.o" "src\\utn.o" 
+18:46:58 **** Incremental Build of configuration Debug for project programa10 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\arr.o" "..\\src\\arr.c" 
+gcc -o programa10.exe "src\\arr.o" "src\\programa10.o" "src\\utn.o" 
+18:47:50 **** Incremental Build of configuration Debug for project programa10 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\programa10.o" "..\\src\\programa10.c" 
+..\src\programa10.c: In function 'main':
+..\src\programa10.c:33:27: warning: passing argument 1 of 'arr_calcularMinimoInt' from incompatible pointer type [-Wincompatible-pointer-types]
+  if(arr_calcularMinimoInt(&edades,EDADESSIZE,&resultado)==0)
+                           ^
+In file included from ..\src\programa10.c:14:0:
+..\src\arr.h:11:5: note: expected 'int *' but argument is of type 'int (*)[5]'
+ int arr_calcularMinimoInt(int* array,int limite, int* resultado);
+     ^~~~~~~~~~~~~~~~~~~~~
+..\src\programa10.c:42:17: warning: passing argument 1 of 'arr_Ordenar' from incompatible pointer type [-Wincompatible-pointer-types]
+  if(arr_Ordenar(&edades,EDADESSIZE)==0)
+                 ^
+In file included from ..\src\programa10.c:14:0:
+..\src\arr.h:13:5: note: expected 'int *' but argument is of type 'int (*)[5]'
+ int arr_Ordenar(int* array,int limite);
+     ^~~~~~~~~~~
+..\src\programa10.c:22:6: warning: unused variable 'acumuladorEdades' [-Wunused-variable]
+  int acumuladorEdades=0;
+      ^~~~~~~~~~~~~~~~
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\arr.o" "..\\src\\arr.c" 
+gcc -o programa10.exe "src\\arr.o" "src\\programa10.o" "src\\utn.o" 
+Info: Nothing to build for programa10
+01:20:40 **** Incremental Build of configuration Debug for project programa10 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\programa10.o" "..\\src\\programa10.c" 
+..\src\programa10.c: In function 'main':
+..\src\programa10.c:35:27: warning: passing argument 1 of 'arr_calcularMinimoInt' from incompatible pointer type [-Wincompatible-pointer-types]
+  if(arr_calcularMinimoInt(&edades,EDADESSIZE,&resultado)==0)
+                           ^
+In file included from ..\src\programa10.c:14:0:
+..\src\arr.h:11:5: note: expected 'int *' but argument is of type 'int (*)[5]'
+ int arr_calcularMinimoInt(int* array,int limite, int* resultado);
+     ^~~~~~~~~~~~~~~~~~~~~
+..\src\programa10.c:44:17: warning: passing argument 1 of 'arr_Ordenar' from incompatible pointer type [-Wincompatible-pointer-types]
+  if(arr_Ordenar(&edades,EDADESSIZE)==0)
+                 ^
+In file included from ..\src\programa10.c:14:0:
+..\src\arr.h:13:5: note: expected 'int *' but argument is of type 'int (*)[5]'
+ int arr_Ordenar(int* array,int limite);
+     ^~~~~~~~~~~
+gcc -o programa10.exe "src\\arr.o" "src\\programa10.o" "src\\utn.o" 
+Info: Nothing to build for programa10
+01:21:07 **** Incremental Build of configuration Debug for project programa10 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\programa10.o" "..\\src\\programa10.c" 
+..\src\programa10.c: In function 'main':
+..\src\programa10.c:35:27: warning: passing argument 1 of 'arr_calcularMinimoInt' from incompatible pointer type [-Wincompatible-pointer-types]
+  if(arr_calcularMinimoInt(&edades,EDADESSIZE,&resultado)==0)
+                           ^
+In file included from ..\src\programa10.c:14:0:
+..\src\arr.h:11:5: note: expected 'int *' but argument is of type 'int (*)[5]'
+ int arr_calcularMinimoInt(int* array,int limite, int* resultado);
+     ^~~~~~~~~~~~~~~~~~~~~
+..\src\programa10.c:41:17: warning: passing argument 1 of 'arr_Ordenar' from incompatible pointer type [-Wincompatible-pointer-types]
+  if(arr_Ordenar(&edades,EDADESSIZE)==0)
+                 ^
+In file included from ..\src\programa10.c:14:0:
+..\src\arr.h:13:5: note: expected 'int *' but argument is of type 'int (*)[5]'
+ int arr_Ordenar(int* array,int limite);
+     ^~~~~~~~~~~
+gcc -o programa10.exe "src\\arr.o" "src\\programa10.o" "src\\utn.o" 
+Info: Nothing to build for programa10
+01:21:35 **** Incremental Build of configuration Debug for project programa10 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\programa10.o" "..\\src\\programa10.c" 
+..\src\programa10.c: In function 'main':
+..\src\programa10.c:33:27: warning: passing argument 1 of 'arr_calcularMinimoInt' from incompatible pointer type [-Wincompatible-pointer-types]
+  if(arr_calcularMinimoInt(&edades,EDADESSIZE,&resultado)==0)
+                           ^
+In file included from ..\src\programa10.c:14:0:
+..\src\arr.h:11:5: note: expected 'int *' but argument is of type 'int (*)[5]'
+ int arr_calcularMinimoInt(int* array,int limite, int* resultado);
+     ^~~~~~~~~~~~~~~~~~~~~
+..\src\programa10.c:42:17: warning: passing argument 1 of 'arr_Ordenar' from incompatible pointer type [-Wincompatible-pointer-types]
+  if(arr_Ordenar(&edades,EDADESSIZE)==0)
+                 ^
+In file included from ..\src\programa10.c:14:0:
+..\src\arr.h:13:5: note: expected 'int *' but argument is of type 'int (*)[5]'
+ int arr_Ordenar(int* array,int limite);
+     ^~~~~~~~~~~
+gcc -o programa10.exe "src\\arr.o" "src\\programa10.o" "src\\utn.o" 
+c:/mingw/bin/../lib/gcc/mingw32/6.3.0/../../../../mingw32/bin/ld.exe: cannot open output file programa10.exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+01:21:36 **** Incremental Build of configuration Debug for project programa10 ****
+Info: Internal Builder is used for build
+gcc -o programa10.exe "src\\arr.o" "src\\programa10.o" "src\\utn.o" 
+01:25:44 **** Incremental Build of configuration Debug for project programa10 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\programa10.o" "..\\src\\programa10.c" 
+..\src\programa10.c: In function 'main':
+..\src\programa10.c:33:3: error: expected ';' before '}' token
+   }
+   ^
+..\src\programa10.c:37:27: warning: passing argument 1 of 'arr_calcularMinimoInt' from incompatible pointer type [-Wincompatible-pointer-types]
+  if(arr_calcularMinimoInt(&edades,EDADESSIZE,&resultado)==0)
+                           ^
+In file included from ..\src\programa10.c:14:0:
+..\src\arr.h:11:5: note: expected 'int *' but argument is of type 'int (*)[5]'
+ int arr_calcularMinimoInt(int* array,int limite, int* resultado);
+     ^~~~~~~~~~~~~~~~~~~~~
+..\src\programa10.c:46:17: warning: passing argument 1 of 'arr_Ordenar' from incompatible pointer type [-Wincompatible-pointer-types]
+  if(arr_Ordenar(&edades,EDADESSIZE)==0)
+                 ^
+In file included from ..\src\programa10.c:14:0:
+..\src\arr.h:13:5: note: expected 'int *' but argument is of type 'int (*)[5]'
+ int arr_Ordenar(int* array,int limite);
+     ^~~~~~~~~~~
+01:25:46 **** Incremental Build of configuration Debug for project programa10 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\utn.o" "..\\src\\utn.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\programa10.o" "..\\src\\programa10.c" 
+..\src\programa10.c: In function 'main':
+..\src\programa10.c:33:3: error: expected ';' before '}' token
+   }
+   ^
+..\src\programa10.c:37:27: warning: passing argument 1 of 'arr_calcularMinimoInt' from incompatible pointer type [-Wincompatible-pointer-types]
+  if(arr_calcularMinimoInt(&edades,EDADESSIZE,&resultado)==0)
+                           ^
+In file included from ..\src\programa10.c:14:0:
+..\src\arr.h:11:5: note: expected 'int *' but argument is of type 'int (*)[5]'
+ int arr_calcularMinimoInt(int* array,int limite, int* resultado);
+     ^~~~~~~~~~~~~~~~~~~~~
+..\src\programa10.c:46:17: warning: passing argument 1 of 'arr_Ordenar' from incompatible pointer type [-Wincompatible-pointer-types]
+  if(arr_Ordenar(&edades,EDADESSIZE)==0)
+                 ^
+In file included from ..\src\programa10.c:14:0:
+..\src\arr.h:13:5: note: expected 'int *' but argument is of type 'int (*)[5]'
+ int arr_Ordenar(int* array,int limite);
+     ^~~~~~~~~~~
+01:26:31 **** Incremental Build of configuration Debug for project programa10 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\programa10.o" "..\\src\\programa10.c" 
+..\src\programa10.c: In function 'main':
+..\src\programa10.c:33:27: warning: passing argument 1 of 'arr_calcularMinimoInt' from incompatible pointer type [-Wincompatible-pointer-types]
+  if(arr_calcularMinimoInt(&edades,EDADESSIZE,&resultado)==0)
+                           ^
+In file included from ..\src\programa10.c:14:0:
+..\src\arr.h:11:5: note: expected 'int *' but argument is of type 'int (*)[5]'
+ int arr_calcularMinimoInt(int* array,int limite, int* resultado);
+     ^~~~~~~~~~~~~~~~~~~~~
+..\src\programa10.c:42:17: warning: passing argument 1 of 'arr_Ordenar' from incompatible pointer type [-Wincompatible-pointer-types]
+  if(arr_Ordenar(&edades,EDADESSIZE)==0)
+                 ^
+In file included from ..\src\programa10.c:14:0:
+..\src\arr.h:13:5: note: expected 'int *' but argument is of type 'int (*)[5]'
+ int arr_Ordenar(int* array,int limite);
+     ^~~~~~~~~~~
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\utn.o" "..\\src\\utn.c" 
+gcc -o programa10.exe "src\\arr.o" "src\\programa10.o" "src\\utn.o" 

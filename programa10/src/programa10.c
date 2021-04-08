@@ -1,6 +1,6 @@
 /*
  ============================================================================
- Name        : programa9.c
+ Name        : programa10.c
  Author      : Luca
  Version     :
  Copyright   : Your copyright notice
@@ -13,40 +13,42 @@
 #include "utn.h"
 #include "arr.h"
 
-
 #define EDADESSIZE 5
 
 int main(void) {
-
 	setbuf(stdout,NULL);
-
 	int edad;
 	int edades[EDADESSIZE];
-	int acumuladorEdades=0;
-	float promedioEdades;
-	int numeroMinimo;
-
+	int resultado;
 
 	for(int i=0;i<EDADESSIZE;i++)
 	{
-		if(utn_getInt(edades[i],"Ingrese edad:","Error\n",0,120,3)==0){
-			edad=edades[i];
+		if(utn_getInt(&edad,"Ingrese edad:\n","Error\n",0,120,5)==0)
+		{
+			edades[i] = edad;
 		}
 
 	}
+
+	if(arr_calcularMinimoInt(&edades,EDADESSIZE,&resultado)==0)
+	{
+		printf("valor %d\n",resultado);
+
+	}
+	else{
+		printf("Error");
+	}
+
+	if(arr_Ordenar(&edades,EDADESSIZE)==0)
+	{
 		for(int i=0;i<EDADESSIZE;i++){
-			if(arr_calcularPromedioInt(&edad,EDADESSIZE, &promedioEdades)==0){
-					promedioEdades=(float)acumuladorEdades/EDADESSIZE;
-					printf("La edad promedio es %f",promedioEdades);
-				}
-			else{
-				printf("Error");
-			}
-			if(arr_calcularMinimoInt(&edad,EDADESSIZE,&numeroMinimo)==0)
-			{
-				printf("La edad minima es: %d",numeroMinimo);
-			}
+			printf("indice: %d valor: %d\n", i, edades[i]);
 		}
+
+	}
+	else{
+		printf("Error");
+	}
 
 
 	return EXIT_SUCCESS;
