@@ -26,29 +26,37 @@ int arr_calcularMinimoInt(int* array,int limite, int* resultado)
 
 	return retorno;
 }
-
+/** \brief Ordena el array
+ * \param int*: puntero a array
+ * \param int: limite del array
+ * \return int: 0 esta ok y -1 error
+ */
 int arr_Ordenar(int* array,int limite)
 {
 	int retorno=-1;
 	int flagSwap;
 	int bufferInt;
+	int nuevoLimite;
+
 	if(array!=NULL && limite>0)
 	{
+		nuevoLimite=limite-1;
 		retorno=0;
 		do{
 			flagSwap=0;
-			limite--;
-			for(int i=0;i<limite;i++)
+
+			for(int i=0;i<nuevoLimite;i++)
 			{
-				if(array[i]<array[i+1])
+				if(array[i]>array[i+1])
 				{
+					flagSwap=1;
 					bufferInt=array[i];
 					array[i]=array[i+1];
 					array[i+1]=bufferInt;
-					flagSwap=1;
 				}
+
 			}
-			limite--;
+			nuevoLimite--;
 		}while(flagSwap);
 	}
 	return retorno;

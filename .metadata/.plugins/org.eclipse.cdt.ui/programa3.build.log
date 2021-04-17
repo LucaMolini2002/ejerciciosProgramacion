@@ -1,1 +1,75 @@
-Info: Nothing to build for programa3
+14:58:29 **** Incremental Build of configuration Debug for project programa3 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\programa3.o" "..\\src\\programa3.c" 
+..\src\programa3.c: In function 'validarQueSeaNumero':
+..\src\programa3.c:18:1: error: stray '\342' in program
+ ​
+ ^
+..\src\programa3.c:18:2: error: stray '\200' in program
+ ​
+  ^
+..\src\programa3.c:18:3: error: stray '\213' in program
+ ​
+   ^
+..\src\programa3.c:27:1: error: stray '\342' in program
+ ​
+ ^
+..\src\programa3.c:27:2: error: stray '\200' in program
+ ​
+  ^
+..\src\programa3.c:27:3: error: stray '\213' in program
+ ​
+   ^
+..\src\programa3.c: At top level:
+..\src\programa3.c:40:1: error: stray '\342' in program
+ ​
+ ^
+..\src\programa3.c:40:2: error: stray '\200' in program
+ ​
+  ^
+..\src\programa3.c:40:3: error: stray '\213' in program
+ ​
+   ^
+..\src\programa3.c: In function 'main':
+..\src\programa3.c:42:1: error: stray '\342' in program
+ ​
+ ^
+..\src\programa3.c:42:2: error: stray '\200' in program
+ ​
+  ^
+..\src\programa3.c:42:3: error: stray '\213' in program
+ ​
+   ^
+..\src\programa3.c:46:1: error: stray '\342' in program
+ ​
+ ^
+..\src\programa3.c:46:2: error: stray '\200' in program
+ ​
+  ^
+..\src\programa3.c:46:3: error: stray '\213' in program
+ ​
+   ^
+..\src\programa3.c:53:1: error: stray '\342' in program
+ ​
+ ^
+..\src\programa3.c:53:2: error: stray '\200' in program
+ ​
+  ^
+..\src\programa3.c:53:3: error: stray '\213' in program
+ ​
+   ^
+..\src\programa3.c:55:1: error: stray '\342' in program
+ ​
+ ^
+..\src\programa3.c:55:2: error: stray '\200' in program
+ ​
+  ^
+..\src\programa3.c:55:3: error: stray '\213' in program
+ ​
+   ^
+..\src\programa3.c:43:6: warning: unused variable 'i' [-Wunused-variable]
+  int i;
+      ^
+
+14:58:29 Build Failed. 21 errors, 1 warnings. (took 149ms)
+

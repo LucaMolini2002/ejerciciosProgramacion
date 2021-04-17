@@ -23,26 +23,26 @@ int main(void) {
 
 	for(int i=0;i<EDADESSIZE;i++)
 	{
-		if(utn_getInt(&edad,"Ingrese edad:\n","Error\n",0,120,5)==0)
+		if(utn_getInt(&edad,"Ingrese edad:\n","Error\n",0,120,3)==0)
 		{
 			edades[i] = edad;
 		}
 
 	}
 
-	if(arr_calcularMinimoInt(&edades,EDADESSIZE,&resultado)==0)
+	if(arr_calcularMinimoInt(edades,EDADESSIZE,&resultado)==0)
 	{
-		printf("valor %d\n",resultado);
+		printf("El minimo es: %d\n",resultado);
 
 	}
 	else{
 		printf("Error");
 	}
 
-	if(arr_Ordenar(&edades,EDADESSIZE)==0)
+	if(arr_Ordenar(edades,EDADESSIZE)==0)
 	{
 		for(int i=0;i<EDADESSIZE;i++){
-			printf("indice: %d valor: %d\n", i, edades[i]);
+			printf("Indice: %d valor: %d\n", i, edades[i]);
 		}
 
 	}

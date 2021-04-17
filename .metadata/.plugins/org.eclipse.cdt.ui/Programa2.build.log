@@ -1,1 +1,67 @@
-Info: Nothing to build for Programa2
+14:58:28 **** Incremental Build of configuration Debug for project Programa2 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Programa2.o" "..\\src\\Programa2.c" 
+..\src\Programa2.c: In function 'main':
+..\src\Programa2.c:46:28: error: invalid operands to binary > (have 'Persona {aka struct <anonymous>}' and 'float')
+   if(i==0||arrayPersonas[i]>pesoMax){
+            ~~~~~~~~~~~~~~~~^
+..\src\Programa2.c:47:25: error: '(Persona *)&arrayPersonas' is a pointer; did you mean to use '->'?
+    pesoMax=arrayPersonas.peso[i];
+                         ^
+                         ->
+..\src\Programa2.c:48:39: error: '(Persona *)&arrayPersonas' is a pointer; did you mean to use '->'?
+    strncpy(nombrePesoMax,arrayPersonas.nombre[i],sizeof(nombrePesoMax));
+                                       ^
+                                       ->
+..\src\Programa2.c:49:4: error: 'alturaPesoMax' undeclared (first use in this function)
+    alturaPesoMax=arrayPersonas.peso[i];
+    ^~~~~~~~~~~~~
+..\src\Programa2.c:49:4: note: each undeclared identifier is reported only once for each function it appears in
+..\src\Programa2.c:49:31: error: '(Persona *)&arrayPersonas' is a pointer; did you mean to use '->'?
+    alturaPesoMax=arrayPersonas.peso[i];
+                               ^
+                               ->
+..\src\Programa2.c:51:28: error: invalid operands to binary > (have 'Persona {aka struct <anonymous>}' and 'float')
+   if(i==0||arrayPersonas[i]>alturaMax){
+            ~~~~~~~~~~~~~~~~^
+..\src\Programa2.c:52:27: error: '(Persona *)&arrayPersonas' is a pointer; did you mean to use '->'?
+    alturaMax=arrayPersonas.medida[i];
+                           ^
+                           ->
+..\src\Programa2.c:53:41: error: '(Persona *)&arrayPersonas' is a pointer; did you mean to use '->'?
+    strncpy(nombreAlturaMax,arrayPersonas.nombre[i],sizeof(nombrePesoMax));
+                                         ^
+                                         ->
+..\src\Programa2.c:54:4: error: 'pesoAlturaMax' undeclared (first use in this function)
+    pesoAlturaMax=arrayPersonas.medida[i];
+    ^~~~~~~~~~~~~
+..\src\Programa2.c:54:31: error: '(Persona *)&arrayPersonas' is a pointer; did you mean to use '->'?
+    pesoAlturaMax=arrayPersonas.medida[i];
+                               ^
+                               ->
+..\src\Programa2.c:58:36: error: '(Persona *)&arrayPersonas' is a pointer; did you mean to use '->'?
+  if(CalcularMaxMedida(arrayPersonas.medida,DTY_PERSONAS,&resultadoMedidas,arrayPersonas.nombre)==0)
+                                    ^
+                                    ->
+..\src\Programa2.c:58:88: error: '(Persona *)&arrayPersonas' is a pointer; did you mean to use '->'?
+  if(CalcularMaxMedida(arrayPersonas.medida,DTY_PERSONAS,&resultadoMedidas,arrayPersonas.nombre)==0)
+                                                                                        ^
+                                                                                        ->
+..\src\Programa2.c:66:34: error: '(Persona *)&arrayPersonas' is a pointer; did you mean to use '->'?
+  if(CalcularMaxPeso(arrayPersonas.peso,DTY_PERSONAS,&resultadoPesos,arrayPersonas.nombre)==0)
+                                  ^
+                                  ->
+..\src\Programa2.c:66:82: error: '(Persona *)&arrayPersonas' is a pointer; did you mean to use '->'?
+  if(CalcularMaxPeso(arrayPersonas.peso,DTY_PERSONAS,&resultadoPesos,arrayPersonas.nombre)==0)
+                                                                                  ^
+                                                                                  ->
+..\src\Programa2.c: In function 'CalcularMaxPeso':
+..\src\Programa2.c:109:4: error: 'nombre' undeclared (first use in this function)
+    nombre[i]=nombre
+    ^~~~~~
+..\src\Programa2.c:110:4: error: expected ';' before 'retorno'
+    retorno=0;
+    ^~~~~~~
+
+14:58:28 Build Failed. 16 errors, 0 warnings. (took 150ms)
+
